@@ -1,0 +1,193 @@
+<!------
+
+Question Number (1) DOM Manipulation
+
+Use JavaScript to handle the button click event and change the content of the div element.
+When the button is clicked, display a new message or image in the div element.
+---->
+
+
+
+<!------
+</head>
+
+<body>
+
+    <div id="demo">id="demo"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quo.</div>
+
+    <button onclick="changeHTML()">Click Me</button>
+
+   
+
+    <script >
+
+        function changeHTML(){
+
+            document.getElementById('demo').innerHTML = "Hi I Am Rahed Hossen ";
+
+        }
+
+    </script>
+
+</body>
+
+---->
+
+
+
+
+<!--------
+
+Question Number (2)   Click Counter
+
+Create an HTML file with a button and a paragraph element to display the count.
+Use JavaScript to handle the button click event and increment the count each time the button is clicked.
+Display the updated count on the paragraph element.
+
+--->
+
+
+
+<!-----
+
+</head>
+
+<body>
+
+    <div id="demo">0</div>
+
+    <button onclick="counter()">Click on this text</button>
+
+    <script>
+
+        function counter(){
+
+            let x = document.getElementById("demo").innerText;
+
+            let value = parseInt(x);
+
+            value ++;
+
+            console.log(x);
+
+            document.getElementById("demo").innerText = value;
+
+        }
+
+    </script>
+
+</body>
+
+-->
+
+
+
+
+<!-----
+
+Question Number (3)  Image Switcher
+
+Create an HTML file with an image element and two buttons.
+Use JavaScript to handle the button click events and switch the image source when a button is clicked.
+The first button should change the image to "image1.jpg" and the second button should change it to "image2.jpg".
+--->
+
+
+<!---------
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Changing Example</title>
+    
+</head>
+<body>
+
+<button id="button1">button1</button>
+<button id="button2">button2</button><br/><br/>
+
+<img id="first_img" src="" alt="">
+
+</body>
+</html>
+
+<script>  
+document.addEventListener("DOMContentLoaded", function() {
+  const button1 = document.getElementById("button1");
+  const button2 = document.getElementById("button2");
+  const image = document.getElementById("first_img");
+
+  button1.addEventListener("click", function() {
+      image.src = 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=200&q=60';
+  });
+
+  button2.addEventListener("click", function() {
+      image.src = 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=200&q=60';
+  });
+});
+</script>
+
+----->
+
+
+<!---------
+Question Number (4)  Ajax 
+
+Use this api = https://jsonplaceholder.typicode.com/posts
+Print or console.log all data using fetch()
+
+-->
+
+
+
+<!------
+
+</head>
+
+<body>
+
+        <p id="demo">Fetch a file to change this text.</p>
+
+   
+
+    <script>
+
+        let url = "https://jsonplaceholder.typicode.com/posts"
+
+        fetch (url)
+
+        .then(x => x.text())
+
+        .then(data => document.getElementById("demo").innerHTML = data);
+
+    </script>
+
+</body>
+
+
+--->
+
+
+
+
+
+<!-------
+
+<button onclick="events()" id="button1">Button1</button>
+<button onclick="events()" id="button2">Button2</button>
+
+
+<script>
+function events() {
+ 
+  document.getElementById("button1").innerHTML = '<img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbXB1dGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=200&q=60">';
+}
+
+function events() {
+  document.getElementById("button2").innerHTML = '<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=200&q=60">';
+}
+</script>
+
+
+-->
+
+

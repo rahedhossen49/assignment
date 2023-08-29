@@ -1,0 +1,431 @@
+
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ </head>
+ <body>
+
+
+<!------------
+
+<ul id="MyItem"></ul></br>
+<input id="MyInput"></br>
+<button onclick="Additem()">AddItem</button><br>
+
+<script>   
+  function Additem(){
+  
+     var itemValue = document.getElementById('MyInput').value;
+  
+     var listItem = document.createElement('li');
+  
+          listItem.innerHTML = itemValue;
+  
+  
+     var MyItem = document.getElementById('MyItem');
+     MyItem.appendChild(listItem);
+  
+  }
+  </script>
+-->
+
+
+
+
+<!------
+<button onclick="Chngatr()">Button</button> </br>
+
+<img
+id = "MyImg"
+height="140"
+width="140"
+src="https://media.istockphoto.com/id/1495056907/photo/img_9675-lac-vert-passy-plaine-joux.webp?b=1&s=170667a&w=0&k=20&c=nDe16O7BNBQNhBZwjIrZMj6rGIm19vQIqkt1WEyAL4Y="
+/>
+
+<script>  
+
+function Chngatr(){
+
+ let  = document.getElementById(MyImg);
+ //MyImg.src="https://images.unsplash.com/photo-1496458590512-56d2688442b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGltZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60"
+ MyImg.height="240"
+ MyImg.width="240"
+
+}
+</script>
+-->
+
+
+
+<!-----
+
+
+<input type="number" id="num1">
+<input type="number" id="num2">
+<button onclick="AddtwoNumber()">Add</button>
+
+<script>
+function AddtwoNumber() {
+  var num1 = document.getElementById("num1").value;
+  var num2 = document.getElementById("num2").value;
+
+  var result = parseFloat(num1) + parseFloat(num2);
+
+  alert(result);
+}
+</script>
+
+--->
+
+
+
+
+
+<!-----
+
+ <button onclick="demo()">Buttons</button>
+
+<script>  
+ function demo(){
+ var info = document.lastModified;
+ 
+ document.getElementsByTagName('p')[0].innerHTML=info;
+ }
+
+</script>
+
+--->
+
+
+
+
+<!------
+
+<button onclick="demo()">Buttons</button> 
+
+<script>
+function demo(){
+
+var MyItem = document.getElementsByTagName('p');
+var item = MyItem.length;
+alert(item);
+
+}
+</script>
+
+-->
+
+
+<!--------
+
+<button onclick="demo()">Buttons</button>
+
+<script>  
+function demo(){
+
+var w = window.open()
+
+w.document.open();
+w.document.write("Hello World ");
+w.window.close();
+
+}
+
+</script>
+
+
+-->
+
+
+<!------
+
+<button onclick="demo()">Buttons</button>
+
+<script>  
+ function demo(){
+
+  document.open('text/html','replace');
+  document.write("<h2> Rahed Hossen </h2>");
+  document.close()
+
+ }
+</script>
+
+--->
+
+
+
+
+<!-----
+<h1 id="MyId" class="">Rahed Hossen</h1>
+<button onclick="AddStyle()">AddStyle</button>
+<button onclick="RemoveStyle()">RemoveSttyle</button>
+
+<script> 
+function AddStyle(){
+
+let H1Tag = document.getElementById('MyId');
+
+H1Tag.classList.add('text-primary');
+
+}
+
+
+function RemoveStyle(){
+
+let H1Tag = document.getElementById('MyId');
+H1Tag.classList.remove('text-primary');
+
+}
+
+
+</script>
+
+--->
+
+
+<!-------
+
+
+<script> 
+navigator.geolocation.getCurrentPosition (function(position){
+
+  let altitude = position.coords.altitude;
+  
+  let latitude = position.coords.latitude;
+  
+  let longitude = position.coords.longitude;
+  
+  let speed = position.coords.speed;
+  
+  
+  document.write("altitude", +altitude+ "</br>");
+  
+  document.write("letetude", +latitude+ "</br>");
+  
+  document.write("longitude", +longitude+ "</br>");
+  
+  document.write("speed", +speed+" </br>");
+  
+  })
+
+</script>
+
+
+
+-->
+
+
+
+<!------
+
+<button onclick="FindElements()">buttons</button>
+
+<script>  
+function FindElements(){
+
+ document.querySelector('#MyId').innerHTML="h1 manupulated"
+ document.querySelector('h4').innerHTML="h4 manupulated"
+ document.querySelector('.Myclass').innerHTML="h6 manupulated"
+ document.querySelector('p[name="Myname"]').innerHTML="p manupulated"
+
+
+}
+</script>
+
+
+--->
+
+
+
+<!-------
+
+
+<input id="num1"><br>
+<input id="num2">
+<button onclick="AddtwoNumber()">Add</button>
+
+<script>  
+function AddtwoNumber() {
+  var x = document.getElementById("num1").value;
+  var y = document.getElementById("num2").value;
+
+  var z = parseFloat(x) + parseFloat(y);
+
+  alert(z);
+
+}
+
+</script>
+
+
+--->
+
+
+
+
+<!------
+
+
+<h1 id="MyId">H1</h1>
+<h6 class="Myclass">H6</h6>
+<p name="Myname">P</p>
+<h4></h4>
+
+<button onclick="changeContent()">Click to Change Content</button>
+
+<script>
+  function changeContent() {
+    
+    document.querySelector('#MyId').innerHTML = 'Updated H1';
+    document.querySelector('.Myclass').innerHTML = 'Updated H6';
+    document.querySelector('p[name=Myname]').innerHTML = 'Updated P';
+    document.querySelector('h4').innerHTML = 'Updated H4';
+  }
+</script>
+
+
+---->
+
+
+
+
+
+
+
+
+
+<!-------------------IMPORTANNT-------------------IMPORTANT----------->
+
+
+
+
+
+
+
+
+
+
+<!--------------
+
+<input type="number" id="a">
+<input type="number" id="b">
+
+<button onclick="multiply()">Multiply</button>
+<button onclick="divide()">Divide</button>
+
+<p id="result"></p>
+
+<script>
+function multiply() {
+    let number1 = parseFloat(document.getElementById('a').value);
+    let number2 = parseFloat(document.getElementById('b').value);
+    document.getElementById('result').innerHTML = number1 * number2;
+}
+
+function divide() {
+    let number1 = parseFloat(document.getElementById('a').value);
+    let number2 = parseFloat(document.getElementById('b').value);
+    document.getElementById('result').innerHTML = number1 / number2;
+}
+
+// Initial calculations
+multiply();
+divide();
+</script>
+
+---->
+
+
+
+
+
+<!-----
+<script>
+    let ans = prompt("What is your choice? Multiply or Divide");
+
+    if (ans === "Multiply") {
+        function Multiply(number1, number2) {
+            let result = number1 * number2;
+            return result;
+        }
+        let result = Multiply(5, 6);
+        console.log(result);
+    }
+    else if (ans === "Divide") {
+        function Divide(num1, num2) {
+            let ans = num1 / num2;
+            return ans;
+        }
+        let ans = Divide(12, 6);
+        console.log(ans);
+    }
+</script>
+
+</body>
+</html>
+
+--->
+
+
+
+
+
+
+
+<!--------
+<script> 
+today=new Date();
+var cmas=new Date(today.getFullYear(), 11, 25);
+if (today.getMonth()==11 && today.getDate()>25) 
+{
+cmas.setFullYear(cmas.getFullYear()+1); 
+}  
+var one_day=1000*60*60*24;
+console.log(Math.ceil((cmas.getTime()-today.getTime())/(one_day))+
+" days left until Christmas!");
+
+</script>
+--->
+
+
+
+
+
+
+
+
+
+<!--------
+<script> 
+const num = Math.ceil(Math.random() * 10);
+
+console.log (num)
+
+const gm = prompt('Guess the number between 1 and 10 inclusive');
+
+
+if(gm == num){
+
+    console.log("Match");
+}
+
+else{
+
+    console.log("not match"+gm);
+}
+
+</script>
+-->
+
+
+
+
+
+
+
+
+
+
+
+

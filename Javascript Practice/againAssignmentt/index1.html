@@ -1,0 +1,133 @@
+<!--  
+1) DOM Manipulation
+
+
+Instructions:
+
+
+Create an HTML file with a button and a div element.
+
+
+Use JavaScript to handle the button click event and change the content of the div element.
+
+
+When the button is clicked, display a new message or image in the div element.
+ -->
+
+
+
+
+<!-- 
+
+ <div id="demo"> Hello I am Rahed Hossen</div>
+
+ <button c onclick="ChangeEl()">Button Click</button>
+
+ <script>
+    function ChangeEl(){
+
+
+        document.getElementById("demo").innerHTML="Hi Rahed Hossen";
+
+          
+
+    }
+ </script> -->
+
+
+<!-- 
+ 2) Click Counter
+
+
+Instructions:
+
+
+Create an HTML file with a button and a paragraph element to display the count.
+
+
+Use JavaScript to handle the button click event and increment the count each time the button is clicked.
+
+
+Display the updated count on the paragraph element. -->
+<!-- 
+<div id="demo">0</div>
+
+<button onclick="count()">Click On The Button</button>
+
+
+<script>
+    function count(){
+
+
+
+        let x = document.getElementById('demo').innerText;
+
+        let value = parseInt(x);
+        value++;
+
+
+        console.log(x);
+
+
+        document.getElementById('demo').innerText=value;
+
+    }
+</script> -->
+
+
+
+<!-- 
+
+3) Image Switcher
+
+Instructions:
+
+Create an HTML file with an image element and two buttons.
+
+
+Use JavaScript to handle the button click events and switch the image source when a button is clicked.
+
+
+The first button should change the image to "image1.jpg" and the second button should change it to "image2.jpg".
+ -->
+ 
+ 
+
+<!-- 
+ <!DOCTYPE html>
+<html>
+<body>
+
+
+<button onclick="document.getElementById('myImage').src='img2.jpg'">Button1</button>
+
+<img id="myImage" src="img1.jpg" style="width:300px">
+
+<button onclick="document.getElementById('myImage').src='img1.jpg'">Button2</button>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Click Counter</title>
+</head>
+<body>
+
+<img id="image" src="img1.jpg" onclick="countClicks()">
+<p>Clicks: <span id="clickCount">0</span></p>
+
+<script>
+    let clickCount = 0;
+
+    function countClicks() {
+        clickCount++;
+        document.getElementById('clickCount').textContent = clickCount;
+    }
+</script>
+
+</body>
+</html>
+
